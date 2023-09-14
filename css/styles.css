@@ -554,7 +554,14 @@ composition:hover compostion__photo:not(:hover) {
     width: 75%;
     height: 50rem;
     background-color: #fff;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table; }
+  .popup__left {
+    width: 33.333333%;
+    float: table-left; }
+  .popup__right {
+    width: 66.666667%; }
 
 .navigation__checkbox {
   display: none; }
@@ -646,8 +653,7 @@ composition:hover compostion__photo:not(:hover) {
     left: 0;
     transition: all .2s; }
   .navigation__icon::before {
-    top: -.8rem;
-    transform-origin: left; }
+    top: -.8rem; }
   .navigation__icon::after {
     top: .8rem; }
 
@@ -662,8 +668,8 @@ composition:hover compostion__photo:not(:hover) {
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
-  transform: rotate(-135deg); }
+  transform: rotate(135deg); }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
-  transform: rotate(135deg); }
+  transform: rotate(-135deg); }
